@@ -223,12 +223,18 @@ section .title::after{
     background: none;
 }
 
-
-.about .about-content .left img{
-    height: 400px;
-    width: 400px;
-    border-radius: 6px;
+.about .about-content .left {
+    overflow: hidden;
+    border-radius: 50%;
 }
+
+.about .about-content .left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
 .about .about-content .right{
     width: 55%;
 }
