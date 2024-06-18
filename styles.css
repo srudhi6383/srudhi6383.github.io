@@ -39,7 +39,7 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .services, .skills, .teams, .contact, footer{
+.about, .services, .skills, .teams, .contact, .footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
@@ -569,18 +569,19 @@ input[type=submit]:hover {
     width: 50%;
 }
 
-#footer {
+.footer {
     height: 80px;
     margin-top: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #14445f;
 }
 
 
-#footer p {
+.footer p {
     color: #000000;
-    font-size: medium;
+    font-size: large;
 }
 
 
