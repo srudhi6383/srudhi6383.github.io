@@ -67,7 +67,7 @@ section .title::after{
     bottom: -8px;
     left: 50%;
     font-size: 20px;
-    color: #2d17ba;
+    color: #cecae5;
     padding: 0 5px;
     background: #fff;
     transform: translateX(-50%);
@@ -80,11 +80,11 @@ section .title::after{
     padding: 50px 0;
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
-    background-color: #0e1961;
+    background-color: #bb803c;
 }
 .navbar.sticky{
     padding: 15px 0;
-    background: #0e1961;
+    background: #DDCAB4;
 }
 .navbar .max-width{
     display: flex;
@@ -118,7 +118,7 @@ section .title::after{
 }
 
 .navbar .menu li a:hover{
-    color: #393597;
+    color: #361f04;
     /* background: rgb(235, 16, 141); */
 }
 
@@ -128,19 +128,19 @@ section .title::after{
 }
 .nav-link #cv-btn{
     display: inline-block;
-    background: rgb(67, 15, 112);
+    background: #b86e1b;
     color: #fff;
     font-size: 25px;
     padding: 12px 36px;
     margin-top: 20px;
     font-weight: 400;
     border-radius: 5px;
-    border: 2px solid #6a85dc;
+    border: 2px solid #d27f1f;
     transition: all 0.3s ease;
 }
 .nav-link #cv-btn:hover{
-    background: #5c76b6;
-    border: 2px solid #393597;
+    background: #ae6a1d;
+    border: 2px solid #9e5d12;
     color:rgb(19, 14, 17);
 }
 /* menu btn styling */
@@ -154,7 +154,7 @@ section .title::after{
     position: fixed;
     height: 45px;
     width: 42px;
-    background: #1a155c;
+    background: #6d3c039d;
     right: 30px;
     bottom: 10px;
     text-align: center;
@@ -180,7 +180,7 @@ section .title::after{
 /* home section styling */
 .home1{
     display: flex;
-    background: #393597;
+    background: #ccab85;
     height: 100vh;
     color: #ffffff;
     min-height: 500px;
@@ -222,14 +222,14 @@ section .title::after{
 }
 .home1 .home-content a{
     display: inline-block;
-    background: #53509b;
+    background: #DDCAB4 ;
     color: #fff;
     font-size: 25px;
     padding: 12px 36px;
     margin-top: 20px;
     font-weight: 400;
     border-radius: 6px;
-    border: 2px solid #393597;
+    border: 2px solid #DDCAB4 ;
     transition: all 0.3s ease;
 }
 .home1 .home-content a:hover{
@@ -294,24 +294,24 @@ section .title::after{
 }
 .btns #resume-button-2{
     display: inline-block;
-    background: #6931d0;
+    background: #b86e1b;
     color: #fff;
     font-size: 25px;
     padding: 12px 36px;
     font-weight: 400;
     border-radius: 6px;
-    border: 2px solid #393597;
+    border: 2px solid #54320a;
     transition: all 0.3s ease;
 }
 .btns #resume-button-2:hover{
     background: #fff;
-    border: 2px solid #7611c3;
-    color: #695adb;
+    border: 2px solid #a46217;
+    color: #010b0f ;
 }
 /* services section styling */
 .services,.skills1{
     color:#fff;
-    background: #393597;
+    background: #DDCAB4;
 }
 .services .max-width{
     display: grid;
@@ -361,7 +361,7 @@ section .title::after{
 }
 .services .serv-content .card i{
     font-size: 50px;
-    color: #393597;
+    color: #b99c7c;
     transition: color 0.3s ease;
 }
 .services .serv-content .card:hover i{
@@ -374,7 +374,7 @@ section .title::after{
 }
 /* skills section styling */
 .skills1{
-    background:#393597;
+    background:#DDCAB4;
 }
 
 .skills1 .skills-content .column{
@@ -422,7 +422,7 @@ section .title::after{
 }
 
 .teams .carousel .project-card{
-    background:#5652c2;
+    background:#DDCAB4;
     color: #222;
     border-radius: 6px;
     padding: 25px 35px;
