@@ -1,5 +1,5 @@
 /*  import google fonts */
-@import url('https://fonts.google.com/specimen/Roboto');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Ubuntu:wght@400;500;700&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -92,15 +92,32 @@ section .title::after{
     justify-content: space-between;
 }
 .navbar .logo a img{
-    color: #fff;
-    font-size: 35px;
-    font-weight: 600;
-    width: auto;
-    height: 60px;
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    background: rgba(255, 255, 255, 0.92);
+    padding: 5px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
     transition: all 0.3s ease;
 }
 
+.navbar .logo a{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.navbar .logo .brand-name{
+    color: var(--text);
+    font-size: 1.05rem;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
 .navbar.sticky .logo a img{
+    width: 50px;
     height: 50px;
 }
 .navbar .menu li{
@@ -144,7 +161,7 @@ section .title::after{
     color:rgb(19, 14, 17);
 }
 /* menu btn styling */
-.nav-link{
+.menu-btn{
     color: #fff;
     font-size: 23px;
     cursor: pointer;
@@ -154,7 +171,7 @@ section .title::after{
     position: fixed;
     height: 45px;
     width: 42px;
-    background: #6d3c039d;
+    background: #31378e30;
     right: 30px;
     bottom: 10px;
     text-align: center;
@@ -636,6 +653,7 @@ section .title::after{
     margin-bottom: 10px;
 }
 
+
 .exp-duration {
     font-weight: bold;
     margin-bottom: 10px;
@@ -675,11 +693,11 @@ footer span a:hover{
     }
 }
 @media (max-width: 947px){
-    .nav-link{
+    .menu-btn{
         display: block;
         z-index: 999;
     }
-    .nav-link i.active:before{
+    .menu-btn i.active:before{
         content: "\f00d";
     }
     .navbar .menu{
@@ -812,6 +830,231 @@ footer span a:hover{
     }
 } 
 
+/* premium visual refresh */
+:root {
+    --bg: #0d1117;
+    --surface: #141a22;
+    --surface-soft: #1b2430;
+    --text: #e6edf3;
+    --muted: #97a3b6;
+    --brand: #9f7aea;
+    --brand-2: #5eead4;
+    --border: rgba(255, 255, 255, 0.1);
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: radial-gradient(circle at top right, #1e293b 0%, var(--bg) 45%, #0b0f14 100%);
+    color: var(--text);
+}
+
+section {
+    padding: 110px 0;
+}
+
+.navbar {
+    background: rgba(10, 12, 18, 0.82);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+    padding: 20px 0;
+}
+
+.navbar.sticky {
+    background: rgba(10, 12, 18, 0.95);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+.navbar .menu li a {
+    color: var(--text);
+    font-size: 17px;
+    margin-left: 24px;
+    font-weight: 500;
+}
+
+.navbar .menu li a:hover,
+.navbar.sticky .menu li a:hover {
+    color: var(--brand-2);
+}
+
+.nav-link #cv-btn,
+.btns #resume-button-2,
+.home1 .home-content a,
+.right form .button-area button {
+    background: linear-gradient(135deg, var(--brand), #7c5ce0);
+    border: 1px solid transparent;
+    border-radius: 12px;
+    box-shadow: 0 10px 24px rgba(159, 122, 234, 0.35);
+}
+
+.nav-link #cv-btn:hover,
+.btns #resume-button-2:hover,
+.home1 .home-content a:hover,
+.right form .button-area button:hover {
+    background: transparent;
+    border-color: var(--brand);
+    color: var(--text);
+}
+
+.home1 {
+    background: transparent;
+    min-height: 100vh;
+}
+
+.home1 .home-content .text-1 {
+    color: var(--muted);
+}
+
+.home1 .home-content .text-2 {
+    font-size: 82px;
+    letter-spacing: 1px;
+}
+
+.home1 .home-content .text-3,
+.about .about-content .right .text,
+.project-title,
+.exp-card h3 {
+    color: var(--text);
+}
+
+.home1 .home-content .text-3 span,
+.about .about-content .right .text span {
+    color: var(--brand-2);
+}
+
+section .title::before {
+    background: var(--border);
+}
+
+section .title {
+    color: var(--text);
+}
+
+section .title::after {
+    background: transparent;
+    color: var(--brand-2);
+}
+
+.about,
+.experience,
+.teams,
+.contact,
+footer {
+    background: transparent;
+}
+
+.skills1 {
+    background: transparent;
+    color: var(--text);
+}
+
+.about .about-content .home-img img {
+    border-radius: 20px;
+    border: 1px solid var(--border);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.about .about-content .right p,
+.contact .contact-content .info .sub-title,
+.project-description,
+.exp-card ul li,
+.project-tech-stack {
+    color: var(--muted);
+}
+
+.skills1 .skills-content .skills-card,
+.teams .carousel .project-card,
+.exp-card,
+.contact .right form,
+.contact .contact-content .left {
+    background: linear-gradient(155deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.02));
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
+}
+
+.skills1 .skills-content .skills-card {
+    width: 160px;
+    height: 160px;
+    color: var(--text);
+}
+
+.skills-card-name {
+    color: var(--text);
+}
+
+.skills1 .skills-content .skills-card:hover,
+.teams .carousel .project-card:hover,
+.exp-card:hover {
+    transform: translateY(-8px);
+}
+
+.teams .carousel .project-card img {
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    border-radius: 14px;
+}
+
+.experience {
+    color: var(--text);
+}
+
+.exp-duration {
+    color: var(--brand-2);
+    font-weight: 600;
+}
+
+.exp-company-logo {
+    width: 140px;
+    height: 56px;
+    object-fit: contain;
+    margin-bottom: 14px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.92);
+    padding: 6px 10px;
+}
+
+.teams .carousel .project-card:hover {
+    background: linear-gradient(155deg, rgba(159, 122, 234, 0.25), rgba(94, 234, 212, 0.16));
+}
+
+.contact .contact-content {
+    gap: 26px;
+}
+
+.contact .contact-content .left,
+.contact .contact-content .right {
+    padding: 26px;
+    border-radius: 16px;
+}
+
+.contact .right form .field input,
+.contact .right form .textarea textarea {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border);
+    color: var(--text);
+}
+
+.contact .right form .field input::placeholder,
+.contact .right form .textarea textarea::placeholder {
+    color: #8b9bb0;
+}
+
+footer {
+    border-top: 1px solid var(--border);
+    background: rgba(10, 12, 18, 0.75);
+    color: var(--muted);
+}
+
+footer span a {
+    color: var(--brand-2);
+}
+
+@media (max-width: 947px) {
+    .navbar .menu {
+        background: rgba(10, 12, 18, 0.96);
+        backdrop-filter: blur(10px);
+    }
+}
+
  @media only screen and (min-width: 601px) and (max-width: 1024px) {
     .teams .carousel .project-card {
         padding: 20px 25px;
@@ -867,3 +1110,154 @@ footer span a:hover{
         width: 80px;
     }
 } 
+
+/* final professional polish */
+.max-width {
+    max-width: 1200px;
+}
+
+.navbar {
+    padding: 14px 0;
+}
+
+.navbar .menu li a {
+    font-size: 1.08rem;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+}
+
+.navbar .menu li a,
+.contact .contact-links a,
+.btns a,
+.project-card,
+.skills-card,
+.exp-card {
+    transition: all 0.28s ease;
+}
+
+.navbar .logo a img {
+    width: 40px;
+    height: 40px;
+}
+
+.home1 .max-width {
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 60px;
+}
+
+.home1 .home-content {
+    max-width: 620px;
+}
+
+.home1 .home-content .text-1 {
+    font-size: 1.2rem;
+    margin-bottom: 6px;
+}
+
+.home1 .home-content .text-2 {
+    font-size: clamp(2.8rem, 6vw, 5rem);
+    line-height: 1.05;
+}
+
+.home1 .home-content .text-3 {
+    font-size: clamp(1.3rem, 2.8vw, 2rem);
+    margin-top: 12px;
+}
+
+section .title {
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    font-weight: 700;
+    letter-spacing: 0.4px;
+}
+
+.about .about-content {
+    gap: 34px;
+}
+
+.about .about-content .right p {
+    font-size: 1.25rem;
+    line-height: 1.6;
+}
+
+.skills1 .skills-content {
+    gap: 20px;
+    justify-content: center;
+}
+
+.skills1 .skills-content .skills-card {
+    width: 165px;
+    height: 165px;
+}
+
+.skills-card-name {
+    margin-top: 8px;
+    font-weight: 600;
+    color: #d3ddec;
+}
+
+.exp-card {
+    width: min(900px, 100%);
+    padding: 34px;
+}
+
+.exp-card h3 {
+    font-size: clamp(1.65rem, 2.5vw, 2rem);
+}
+
+.exp-card ul li {
+    margin-bottom: 10px;
+    line-height: 1.45;
+}
+
+.teams .carousel .project-card {
+    min-height: 430px;
+}
+
+.project-title {
+    font-size: 1.35rem;
+    font-weight: 700;
+}
+
+.project-description {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.project-tech-stack {
+    letter-spacing: 0.3px;
+}
+
+.contact .contact-content .left,
+.contact .contact-content .right {
+    min-height: 420px;
+}
+
+.contact .contact-content .row {
+    height: auto;
+    min-height: 54px;
+    margin-bottom: 8px;
+}
+
+footer {
+    font-size: 0.95rem;
+}
+
+@media (max-width: 947px) {
+    .home1 {
+        min-height: 85vh;
+    }
+
+    .home1 .max-width {
+        gap: 28px;
+    }
+
+    .about .about-content .right p {
+        font-size: 1.08rem;
+    }
+
+    .exp-card {
+        padding: 24px;
+    }
+}
