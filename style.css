@@ -611,6 +611,43 @@ section .title::after{
   color: #8f5cdc;
   background: none;
 }
+
+/* experience section */
+.experience {
+    background: #fff;
+    color: #111;
+}
+
+.experience-content {
+    display: flex;
+    justify-content: center;
+}
+
+.exp-card {
+    background: #DDCAB4;
+    padding: 30px;
+    border-radius: 10px;
+    width: 70%;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+}
+
+.exp-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.exp-duration {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.exp-card ul {
+    margin-left: 20px;
+}
+
+.exp-card ul li {
+    margin-bottom: 8px;
+}
 /* footer section styling */
 footer{
     background: #111;
