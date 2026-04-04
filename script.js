@@ -23,21 +23,23 @@ $(document).ready(function(){
     $('.navbar .menu li a').click(function(){
         // applying again smooth scroll on menu items click   
         $('html').css("scrollBehavior", "smooth");
+        $('.navbar .menu').removeClass("active");
+        $('.menu-btn i').removeClass("active");
     });
     // toggle menu/navbar script
-    $('.nav-link').click(function(){
+    $('.menu-btn').click(function(){
         $('.navbar .menu').toggleClass("active");
-        $('.nav-link i').toggleClass("active");
+        $('.menu-btn i').toggleClass("active");
     });
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["Associate Software Developer","Frontend Developer","Full-Stack Developer"],,
+        strings: ["Associate Software Developer","Frontend Developer","Full-Stack Developer"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
     var typed = new Typed(".typing-2", {
-        strings: ["Associate Software Developer","Frontend Developer","Full-Stack Developer"],],
+        strings: ["Associate Software Developer","Frontend Developer","Full-Stack Developer"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
@@ -47,8 +49,11 @@ $(document).ready(function(){
         margin: 20,
         loop: true,
         autoplay: true,
-        autoplayTimeOut: 2000,
-        autoplayHoverPause: true,
+        autoplayTimeout: 2200,
+        autoplaySpeed: 800,
+        smartSpeed: 900,
+        autoplayHoverPause: false,
+        slideTransition: 'linear',
         responsive: {
             0:{
                 items: 1,
@@ -85,5 +90,5 @@ document.getElementById('contact-phone').addEventListener('click', function() {
   });
 //   email
   document.getElementById('contact-email').addEventListener('click', function() {
-    window.location.href = 'mailto:srudhi24@example.com';
+        window.location.href = 'mailto:srudhi24@gmail.com';
   });
