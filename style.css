@@ -59,7 +59,7 @@ section .title::before{
     left: 50%;
     width: 180px;
     height: 3px;
-    background: #111;
+    background: var(--brand-2);
     transform: translateX(-50%);
 }
 section .title::after{
@@ -69,7 +69,7 @@ section .title::after{
     font-size: 20px;
     color: #cecae5;
     padding: 0 5px;
-    background: #fff;
+    background: var(--brand-2);
     transform: translateX(-50%);
 }
 /* navbar styling */
@@ -255,35 +255,43 @@ section .title::after{
 }
 /* about section styling */
 
+.about .about-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
 .about .about-content .home-img{
-    width: 45%;
+    width: 100%;
+    max-width: 380px;
+    margin-bottom: 36px;
 }
 .about .about-content .home-img img{
-    height: 400px;
-    width: 400px;
+    height: 360px;
+    width: 360px;
     object-fit: cover;
-    border-radius: 6px;
+    border-radius: 18px;
     background: hsl(262, 60%, 90%);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
 }
 .about .about-content .right{
-    width: 55%;
+    width: 100%;
+    max-width: 680px;
     
 }
 .about .about-content .right .text{
-    font-size: 25px;
-    font-weight: 600;
-    margin-bottom: 10px;
-    line-height: 2rem;
+    font-size: 1.65rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+    line-height: 1.35;
 }
 .about .about-content .right p{
-    line-height: 1.5rem;
-    font-size: 20px;
+    line-height: 1.65rem;
+    font-size: 1.15rem;
+    color: var(--muted);
 }
 .about .about-content .right .text span{
-    color: #0c0c1482;
-}
-.about .about-content .right p{
-    text-align: justify;
+    color: var(--brand-2);
+    font-weight: 700;
 }
 .about .about-content .right .logo {
     margin-top: 20%; /* Increase the margin-top for initial positioning */
@@ -306,18 +314,18 @@ section .title::after{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5%;
-    margin-top: 5%;
+    gap: 16px;
+    margin-top: 28px;
 }
 .btns #resume-button-2{
     display: inline-block;
-    background: #b86e1b;
+    background: linear-gradient(135deg, var(--brand), #7c5ce0);
     color: #fff;
-    font-size: 25px;
-    padding: 12px 36px;
-    font-weight: 400;
-    border-radius: 6px;
-    border: 2px solid #54320a;
+    font-size: 1rem;
+    padding: 12px 28px;
+    font-weight: 600;
+    border-radius: 10px;
+    border: 1px solid transparent;
     transition: all 0.3s ease;
 }
 .btns #resume-button-2:hover{
@@ -355,7 +363,7 @@ section .title::after{
     /* mix-blend-mode: color-burn; */
 }
 .services .title::before,.skills1 .title::before{
-    background: #fff;
+    background: var(--brand-2);
 }
 
 .services .serv-content .card{
@@ -398,38 +406,50 @@ section .title::after{
     width: calc(50% - 30px);
 }
 
+.skills-category {
+    margin-bottom: 56px;
+}
+
+.category-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--brand-2);
+    text-align: left;
+    margin-bottom: 32px;
+    letter-spacing: 0.5px;
+}
 
 .skills1 .skills-content {
     display: flex;
     margin-bottom: 5px;
     align-items: center;
-    justify-content: space-around;
-    gap: 2%;
-    
+    justify-content: flex-start;
+    gap: 24px;
+    flex-wrap: wrap;
 }
 
 .skills1 .skills-content .skills-card {
-    width: 150px; /* Set a fixed width for the cards */
-    height: 150px; /* Set a fixed height for the cards */
-    margin-top: 5%;
-    padding: 2%;
+    width: 165px;
+    height: 165px;
+    margin-top: 0;
+    padding: 12px;
     cursor: pointer;
     transition: all 0.3s ease;
-    border-radius: 8px; /* Add border-radius for rounded corners */
-    overflow: hidden; /* Hide any content that might overflow */
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3); /* Add a subtle box shadow */
-    background: #ffffff;
-    color: #111;
-    font-weight: 800;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(155deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.02));
+    border: 1px solid var(--border);
+    color: var(--text);
+    font-weight: 700;
     text-align: center;
 }
 .skills1 .skills-content .skills-card p{
     margin-bottom: 8%;
 }
 .skills1 .skills-content .skills-card:hover {
-    
-    transform: scale(1.1); /* Scale the card on hover */
-    box-shadow: 0px 8px 16px rgba(0, 0, 0.1, 0.5); /* Increase the box shadow on hover */
+    transform: translateY(-8px);
+    box-shadow: 0 16px 40px rgba(159, 122, 234, 0.35);
 }
 
 
@@ -742,13 +762,17 @@ footer span a:hover{
         width: 100%;
     }
     .about .about-content .home-img{
-        display: flex;
-        justify-content: center;
-        margin: 0 auto 60px;
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto 28px;
+    }
+    .about .about-content .home-img img{
+        height: 300px;
+        width: 300px;
     }
     .about .about-content .right{
-        flex: 100%;
-        align-items: center;
+        width: 100%;
+        max-width: 100%;
     }
     .services .serv-content .card{
         width: calc(50% - 10px);
@@ -922,7 +946,7 @@ section {
 }
 
 section .title::before {
-    background: var(--border);
+    background: var(--brand-2);
 }
 
 section .title {
@@ -1003,13 +1027,14 @@ footer {
 }
 
 .exp-company-logo {
-    width: 140px;
-    height: 56px;
+    width: 100px;
+    height: 100px;
     object-fit: contain;
-    margin-bottom: 14px;
-    border-radius: 10px;
-    background: rgba(255, 255, 255, 0.92);
-    padding: 6px 10px;
+    margin-bottom: 18px;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 8px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
 }
 
 .teams .carousel .project-card:hover {
@@ -1183,7 +1208,7 @@ section .title {
 
 .skills1 .skills-content {
     gap: 20px;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .skills1 .skills-content .skills-card {
