@@ -75,12 +75,12 @@ $(document).ready(function(){
 // Resume download
 document.getElementById("resume-button-1").onclick = () => {
     window.open(
-      "https://drive.google.com/file/d/1M6DS5VB1Vkp7a4nUOzlUH-ca1wx-ORhE/view?usp=drive_link"
+      "https://drive.google.com/file/d/1yqiDzjcYrrFGOD03B3yVroWnrdxM3jPm/view?usp=drive_link"
     );
   };
   document.getElementById("resume-button-2").onclick = () => {
     window.open(
-      "https://drive.google.com/file/d/1M6DS5VB1Vkp7a4nUOzlUH-ca1wx-ORhE/view?usp=drive_link"
+      "https://drive.google.com/file/d/1yqiDzjcYrrFGOD03B3yVroWnrdxM3jPm/view?usp=drive_link"
     );
   };
 
