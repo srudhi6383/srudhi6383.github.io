@@ -19,7 +19,7 @@ const About = () => {
 
   const handleResumeClick = (e) => {
     e.preventDefault();
-    window.open("https://drive.google.com/file/d/14icvpNs2aF9CFwdMY81XMzwRrET7NxD5/view?usp=drive_link", "_blank");
+    window.open("https://drive.google.com/file/d/1JJwl5zb6lb_yDzpki8zbIyHu2QWpXpYI/view?usp=drive_link", "_blank");
     
     const link = document.createElement('a');
     link.href = '/images/SRUDHI_P_G_Resume.pdf';
@@ -48,7 +48,7 @@ const About = () => {
             </p>
             <div className="btns">
               <a
-                href="https://drive.google.com/file/d/14icvpNs2aF9CFwdMY81XMzwRrET7NxD5/view?usp=drive_link"
+                href="https://drive.google.com/file/d/1JJwl5zb6lb_yDzpki8zbIyHu2QWpXpYI/view?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="nav-link resume"
